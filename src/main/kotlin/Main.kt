@@ -1,5 +1,6 @@
-fun max(a: Int, b: Int) = if (a > b) a else b
+import geometry.createRandomRectangle
 
+fun max(a: Int, b: Int) = if (a > b) a else b
 
 fun main(args: Array<String>) {
     println("Hello World!")
@@ -40,4 +41,8 @@ fun main(args: Array<String>) {
     println("someList = $someList")
     languages.add("Kotlin")
     println("languages = $languages")
+
+    val rectangle = createRandomRectangle()
+    println("rectangle class = ${rectangle.javaClass}")
+    println("rectangle = $rectangle")
 }
