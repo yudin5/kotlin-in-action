@@ -1,4 +1,6 @@
-import geometry.createRandomRectangle
+package ch02
+
+import ch02.geometry.createRandomRectangle
 
 fun max(a: Int, b: Int) = if (a > b) a else b
 
@@ -37,11 +39,10 @@ fun main(args: Array<String>) {
 
     // Неизменные ссылки, изменяемые объекты
     val languages = arrayListOf("Java")
-    val someList = arrayListOf("sdf sdf sdf".split(" "))
-    println("someList = $someList")
     languages.add("Kotlin")
     println("languages = $languages")
 
+    // Импорт функции
     val rectangle = createRandomRectangle()
     println("rectangle class = ${rectangle.javaClass}")
     println("rectangle = $rectangle")
