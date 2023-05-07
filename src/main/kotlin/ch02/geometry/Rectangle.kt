@@ -1,6 +1,6 @@
 package ch02.geometry
 
-import java.util.Random
+import java.util.*
 
 data class Rectangle(var height: Int, val width: Int) {
     val isSquare: Boolean
