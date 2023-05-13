@@ -12,5 +12,10 @@ fun main() {
     for (i in 1..100) {
         print(fizzBuzz(i))
     }
-    val oneToTen = 1..10
+    val oneToTen: IntRange = 1..10
+    println("\noneToTen = $oneToTen")
+
+    for (i in 100 downTo 1 step 2) {
+        print(fizzBuzz(i))
+    }
 }
